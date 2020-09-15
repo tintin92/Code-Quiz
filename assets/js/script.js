@@ -1,37 +1,33 @@
 // hook elements from the page (ex. var exampleElement = document.querySelector(".elementClass"))
 // Hook question container element
-var displayQuestionEl = document.querySelector(".display-questions")
+var displayQuestionEl = document.querySelector(".display-questions");
 
 // Hook timer element 
-var timerCount = document.querySelector(".timer")
-var resultsEl = document.querySelector(".results")
+var timerCount = document.querySelector(".timer");
+var resultsEl = document.querySelector(".results");
 //Create dynamic elements (i.e. exampleDynamicE1 = document.createElement("button"))
 // - create h3 to Show Instructions Text and Questions
 var mainDisplay = document.createElement("h3");
 // - create Button to Start Quiz
-var startBtn = document.createElement("button");
+var startBtn = document.createElement("div");
 
 // Declare global variables
 // - variable to store timer number 
 var timer = 60;
 // - variable to store current index
 var index = 0;
+
 //****Functions**** */
 function openingPage() {
     //add text to h3 element
-    mainDisplay.textContent = "Press the button to start"
+    mainDisplay.textContent = "Press the button to start";
     // add text to Button
-    startBtn.textContent = "Start"
+    startBtn.textContent = "Start";
     // append text and button to question container
     displayQuestionEl.append(mainDisplay, startBtn)
 }
 
 
-
-// function that loads content when page first loads
-function openingPage() {
-
-}
 // function that shows the question and starts the timer
 function startQuiz() {
     // show timer function
@@ -88,8 +84,8 @@ function nextQuestion() {
 
 
     // append div element to the question container element 
+    displayQuestionEl.append(choicesContainer);
 }
-
 
 
 // function to check answer and display to following question
@@ -99,6 +95,10 @@ function checkAnswer(event) {
 
 
 // function that shows the question and starts the timer
+function checkAnswer(event) {
+
+    //*****Logic to check for right answer */
+}
 
 
 // add event listener to start quiz 
