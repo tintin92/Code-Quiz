@@ -24,9 +24,9 @@ var index = 0;
 function openingPage() {
 //add text to h3 element
     mainDisplay.textContent = "Press the button to start"
-// //     // add text to Button
+    // add text to Button
     startBtn.textContent = "Start"
-// //     // append text and button to question container
+    // append text and button to question container
     displayQuestionEl.append(mainDisplay, startBtn)
 }
 
